@@ -1,4 +1,4 @@
-import { useLayoutEffect, useState } from "react"
+import { useEffect, useLayoutEffect, useState } from "react"
 
 export const Form = () => {
     const [name, setName] = useState("")
@@ -48,11 +48,10 @@ export const Form = () => {
     useLayoutEffect(() => {
         setName("Jorge")
     }, [])
+    useEffect(() => {
+        setSobrenome("Oi")
+    }, [] )
 
-
-    useEffect(() =>{
-        setName("Jorge")
-    }, [])
     return (
         <form>
             <div>

@@ -3,6 +3,8 @@ import { Header } from "./components/Header/Header"
 import { Card } from "./components/Card/Card"
 import { Counter } from "./components/Counter/Counter"
 import { Form } from "./components/Form/Form"
+import { AddressForm } from "./components/AddressForm/AddressForm"
+import { Address } from "./pages/Address/Address"
 
 function App() {
   const user = {
@@ -11,11 +13,6 @@ function App() {
   
   }  
 
-  const products = [
-    {id: 8, name: "Banana", value: 10},
-    {id: 9, name: "Mamão", value: 12},
-    {id: 10, name: "Maçã", value: 8},
-  ]
   return (
     <>
       {/* <Header userName={user.name}/>
@@ -34,7 +31,7 @@ function App() {
         <Counter start={1}>
 
         </Counter> */}
-        <Form />
+        <Address />
     </>
   )
 }
